@@ -28,7 +28,7 @@ export default class Course extends Component {
 						</div>
 						<div id="course-page__short-description" key="course-page__short-description" className={css["course-page__short-description"]}>
 							<section className={css["rich-text-section--with-navigator"]}>
-								<h2 className={css["rich-text-section__title"]}>Our Teachers</h2>
+								<h2 className={css["rich-text-section__title"]}>Our Coaches</h2>
 								{this.props.blok.teachers && this.props.blok.teachers.map((teacher) => (
 									<TeacherCard blok={teacher} key={teacher._uid} />
 								))}
@@ -41,7 +41,7 @@ export default class Course extends Component {
 						</div>
 						<div id="course-page__short-description" key="course-page__short-description" className={css["course-page__short-description"]}>
 							<section className={css["rich-text-section--with-navigator"]}>
-								<h2 className={css["rich-text-section__title"]}>Products</h2>
+								<h2 className={css["rich-text-section__title"]}></h2>
 								{this.props.blok.products && this.props.blok.products.map((product) => (
 									<Element blok={product} key={product._uid} />
 								))}
